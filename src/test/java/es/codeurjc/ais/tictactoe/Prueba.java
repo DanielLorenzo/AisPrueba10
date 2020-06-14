@@ -21,8 +21,8 @@ public class Prueba {
 	protected WebDriver driver;
 	 @BeforeAll
 	 public static void setupClass() {
-		 WebApp.start();
 		 WebDriverManager.chromedriver().setup();
+		 WebApp.start();
 	 }
 	 @BeforeEach
 	 public void setupTest() {
