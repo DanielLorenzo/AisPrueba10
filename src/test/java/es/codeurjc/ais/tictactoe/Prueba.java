@@ -42,7 +42,7 @@ public class Prueba {
 		 }
 	 }
 	 @Test
-	 public void test() {
+	 public void test() throws InterruptedException { {
 		 driver.get("http://www.google.es");
 	 }
 
