@@ -17,10 +17,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-class Prueba {
+public class Prueba {
 	protected WebDriver driver;
 	 @BeforeAll
 	 public static void setupClass() {
+		 WebApp.start();
 		 WebDriverManager.chromedriver().setup();
 	 }
 	 @BeforeEach
