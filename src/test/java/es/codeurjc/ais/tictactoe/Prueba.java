@@ -24,6 +24,12 @@ public class Prueba {
 		 WebDriverManager.chromedriver().setup();
 		 WebApp.start();
 	 }
+	
+	@AfterAll
+	public static void teardownClass() {
+		WebApp.stop();
+	}
+		
 	 @BeforeEach
 	 public void setupTest() {
 		 driver = new ChromeDriver();
